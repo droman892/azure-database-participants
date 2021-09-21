@@ -1,111 +1,62 @@
----
-page_type: sample
-languages:
-- javascript
-- nodejs
-name: "JavaScript end-to-end - deploy Express.js MongoDB app to App Service from Visual Studio Code"
-description: "Deploy the Express.js application which connects to MongoDB to Azure App Service (on Linux) and a CosmosDB."
-products:
-- azure
-- vs-code
-- azure-app-service
-- azure-cosmos-db
----
-# JavaScript end-to-end Express.js app with a MongoDB database
+![Azure Database Participants]()
 
-Express.js website, with SSR React, connecting to a MongoDB. Deploy to Azure to use:
+This is a full-stack application using [Microsoft Docs](https://docs.microsoft.com/en-us/azure/developer/javascript/tutorial/deploy-nodejs-mongodb-app-service-from-visual-studio-code).
 
-* Azure App Service 
-* Azure Cosmos DB (MongoDB API) 
+<p align="center"> :pencil: :ledger: :clipboard: </p>
 
-The sample code is a JavaScript server written with Express.js and the native MongoDB API. The user adds data ( 2 text fields), can view data, and delete a single row or all rows. 
+## Description
 
-The programming work is done for you, this tutorial focuses on using the local and remote Azure environments successfully from inside Visual Studio Code with Azure extensions.
+<p align="center"> This participant-tracking application...</p>
 
-The tutorial demonstrates how to load and run the project locally with VSCode, using extensions, was well as how to run the code remotely on an App service. The tutorial includes creating a CosmosDB resource for the Mongo API, getting the connection information and setting that in the app service configuration setting to connect to a cloud database. 
+<p align="center"> Users are able to...</p>
 
-## Version: Environment Variables
+<p align="center"> Regarding UX, users enjoy...</p>
 
-* Branch: main
-* [Tutorial](https://docs.microsoft.com/azure/developer/javascript/tutorial/web-app-mongodb) 
+## Preview
 
-## Version: Key Vault
+![Azure Database Participants - GIF]()
 
-* Branch: keyvault
-* Tutorial: coming soon
-* [JS KeyVault code snippet](https://github.com/Azure-Samples/js-e2e-express-mongodb/blob/keyvault/src/azure/azure-keyvault.js)
+[Live Preview]()
 
-## Sample application
+## Business Use Case
 
-The Node.js app consists of the following elements:
+- Individual/Business needs a scalable way to track participants
 
-* **Express.js server** hosted on port 8080
-* Simple **React.js server-side view** engine
-* **MongoDB native API** functions to insert, delete, and find data
+## Status
 
-## Features
+<p align="center"> <img src="https://img.shields.io/tokei/lines/github/droman892/azure-database-participants" /> </p>
 
-This project framework provides the following features:
+<p align="center"> <img src="https://img.shields.io/github/languages/count/droman892/azure-database-participants" /> </p>
 
-* Create Azure app resource
-    * Create web app resource
-    * Deploy Express.js app to web app resource
-    * Set app configuration settings
-* Create CosmosDB resource 
-    * Create database resource for use with MongoDB API
-    * Get connection string
+<p align="center"> <img src="https://img.shields.io/github/repo-size/droman892/azure-database-participants" /> </p>
 
-## Getting Started
+## Download and Installation
 
-1. Clone or download repo.
-1. Follow tutorial to create resources with Visual Studio Code extensions.
-    * Create web app resource, to host Express.js app
-    * Create CosmosDB resource, to host MongoDB database
+- Clone the repo: `git clone https://github.com/droman892/azure-database-participants.git` 
+## Usage
 
-## Create or use existing Azure Subscription 
+.....
 
-* An Azure account with an active subscription. [Create one for free](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-appservice-extension&mktingSource=vscode-tutorial-appservice-extension).
+## Roadmap
 
-## Install software
+This participant-tracking application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application include the following:
+1) create a separate page to track participants by date
+2) include media queries for added responsiveness
+3) add a dropdown menu for additional functionality
 
-- [Node.js and npm](https://nodejs.org/en/download), the Node.js package manager installed to your local machine.
-- [Docker](https://docs.docker.com/get-docker/) - Docker is used to provide a local MongoDB database without having to install MongoDB. 
-    - If you need to use Docker to get a local MongoDB database, you also need to use:
-        -  Visual Studio [Dev Containers](https://code.visualstudio.com/docs/remote/containers) provide several common containers for JavaScript development. 
-        - [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-    - If you already have a local MongoDB, and don't want to install Docker, you can still this step. Any steps using the Development Container to access a locally running MongoDB can be repurposed to use your own local MongoDB as long as the following MongoDB URL is available: 
-        - `mongodb://localhost:27017`
-- [Visual Studio Code](https://code.visualstudio.com/) installed to your local machine. 
-- Visual Studio Code extensions:
-    - [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) for Visual Studio Code (installed from within Visual Studio Code).
-    - [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+## Bugs and Issues
 
-## Installation
+See a bug or an issue with this project? [Open a new issue](https://github.com/droman892/azure-database-participants/issues) here on GitHub.
 
-1. Install the sample's dependencies:
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-   ```javascript
-    npm install
-    ```
+Please make sure to update tests as appropriate.
 
-1. Run the command to run the web app.
+## About
 
-    ```javascript
-    npm start
-    ```
+This React form application is maintained by [David Roman](https://www.linkedin.com/in/david-roman-front-end-engineer/).
 
-1. Open a web browser and use the following url to view the web app on your local computer.
+## License
 
-    ```url
-    http://localhost:8080/
-    ```
-
-## Tests
-
-The integration request depends on a real database connection, either locally or remotely. 
-
-* Integration test file: test/data-integration.test.js
-
-## Looking for more Azure JavaScript code?
-
-* [JavaScript e2e repo](https://github.com/azure-samples/js-e2e)
+[MIT](https://choosealicense.com/licenses/mit/)

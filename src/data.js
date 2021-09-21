@@ -1,9 +1,7 @@
 const { MongoClient } = require('mongodb');
 const ObjectId = require('mongodb').ObjectID;
-// read .env file
-require('dotenv').config();
 
-/* eslint no-return-await: 0 */
+require('dotenv').config();
 
 const DATABASE_URL = process.env.DATABASE_URL
     ? process.env.DATABASE_URL
@@ -15,7 +13,6 @@ const DATABASE_COLLECTION_NAME =
 let mongoConnection = null;
 let db = null;
 
-/* eslint no-console: 0 */
 console.log(`DB:${DATABASE_URL}`);
 
 const insertDocuments = async (
@@ -28,7 +25,7 @@ const insertDocuments = async (
     // Get the collection
     const collection = await db.collection(DATABASE_COLLECTION_NAME);
 
-    // Insert some documents
+    // Insert documents
     return await collection.insertMany(documents);
 };
 const findDocuments = async (
@@ -39,7 +36,7 @@ const findDocuments = async (
     if (!db)
         throw Error('findDocuments::missing required params');
 
-    // Get the collection
+    // Get collection
     const collection = await db.collection(DATABASE_COLLECTION_NAME );
 
     // find documents
@@ -68,9 +65,7 @@ const connect = async (url) => {
 
     return MongoClient.connect(url, { useUnifiedTopology: true });
 };
-/* 
-eslint consistent-return: [0, { "treatUndefinedAsUnspecified": false }]
-*/
+
 const connectToDatabase = async () => {
     try {
         if (!DATABASE_URL || !DATABASE_NAME) {

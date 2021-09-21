@@ -1,6 +1,8 @@
-var React = require('react');
+import './index.css';
 
-function DataEntryForm() {
+const React = require('react');
+
+const DataEntryForm = () => {
     return (
         <div>
             <form action="/" method="post">
@@ -9,11 +11,12 @@ function DataEntryForm() {
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="name"
+                        placeholder="Contact Name..."
+                        className="input-box"
                     />
                 </div>
                 <div>
-                    <input type="text" name="job" id="job" placeholder="job" />
+                    <input type="text" name="job" id="job" placeholder="Comments..." />
                 </div>
                 <input type="submit" />
             </form>
@@ -21,7 +24,7 @@ function DataEntryForm() {
     );
 }
 
-function DataList({ dataItems }) {
+const DataList = ({ dataItems }) => {
     return (
         <table>
             <thead>
@@ -48,12 +51,7 @@ function DataList({ dataItems }) {
     );
 }
 
-/* props = {
-        data: [],
-        dbStatus: false
-    }
-*/
-function Index(props) {
+const Index = (props) => {
     return (
         <DefaultLayout >
             {props.dbStatus === false && <div>No database found.</div>}
@@ -74,7 +72,7 @@ function Index(props) {
     );
 }
 
-function DefaultLayout(props) {
+const DefaultLayout = (props) => {
     return (
         <html>
             <body>{props.children}</body>

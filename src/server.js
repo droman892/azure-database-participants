@@ -3,10 +3,7 @@ const express = require('express');
 const render = require('express-react-views');
 const bodyParser = require('body-parser');
 const path = require('path');
-
-// data dependency
 const data = require('./data');
-
 
 const timeStamp = (req) => {
     const date = new Date();
