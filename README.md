@@ -8,19 +8,20 @@ This is a full-stack (MongoDB, Express, React, Node) participant tracking applic
 
 <p align="center"> This participant-tracking application was developed purely to exercise Azure software engineering.  That being said, an Express server locally hosts the application on port 8080 with a React server-side view, with the MongoDB native API in the back-end.</p>
 
-<p align="center"> While this application solely focused on functionality (so no CSS was applied), users are able to enjoy the cloud-deployed </p>
-
-<p align="center"> Regarding UX, users enjoy...</p>
+<p align="center"> While this application solely focused on functionality (so no CSS was applied), users are able to enjoy the cloud-deployed functionality of adding and deleting inputs.  That being said, anyone with access to the URL may modify the application.</p>
 
 ## Preview
 
 ![Azure Database Participants - GIF](https://user-images.githubusercontent.com/25372739/134195803-ed427cb6-35dd-4748-985a-496811779639.gif)
 
-[Live Preview]()
+[Live Preview](https://mongodb-participants.azurewebsites.net/)
+DISCLAIMER: This Azure site exists specifically for public learning purposes.  Please a avoid inputting inappropriate language, and be sure to delete all of your inputs after usage.   
 
 ## Business Use Case
 
 - Individual/Business needs a scalable way to track participants
+
+*** The functionality of this application closely resembles that of a messenger application (e.g., colleagues on a team exchanges online messages)
 
 ## Status
 
