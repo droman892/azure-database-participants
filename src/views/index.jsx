@@ -1,5 +1,3 @@
-import './index.css';
-
 const React = require('react');
 
 const DataEntryForm = () => {
@@ -11,12 +9,16 @@ const DataEntryForm = () => {
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Contact Name..."
-                        className="input-box"
+                        placeholder="Participant Name..."
                     />
                 </div>
                 <div>
-                    <input type="text" name="job" id="job" placeholder="Comments..." />
+                    <input 
+                        type="text" 
+                        name="job" 
+                        id="job" 
+                        placeholder="Comments..." 
+                    />
                 </div>
                 <input type="submit" />
             </form>
@@ -29,10 +31,10 @@ const DataList = ({ dataItems }) => {
         <table>
             <thead>
                 <th>Name</th>
-                <th>Job</th>
+                <th>Comments</th>
                 <th>
-                    Delete{' '}
-                    {dataItems.length > 1 && <a href="/delete?all=true">all</a>}
+                    {' '}
+                    {dataItems.length > 1 && <a href="/delete?all=true">Restart</a>}
                 </th>
             </thead>
             {dataItems.map((item) => {

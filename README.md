@@ -1,20 +1,20 @@
-![Azure Database Participants]()
+![Azure Database Participants](https://user-images.githubusercontent.com/25372739/134193682-7c3e2d77-dd37-414e-83c0-ea2c09029e1f.png)
 
-This is a full-stack application using [Microsoft Docs](https://docs.microsoft.com/en-us/azure/developer/javascript/tutorial/deploy-nodejs-mongodb-app-service-from-visual-studio-code).
+This is a full-stack (MongoDB, Express, React, Node) participant tracking application using [Microsoft Docs](https://docs.microsoft.com/en-us/azure/developer/javascript/tutorial/deploy-nodejs-mongodb-app-service-from-visual-studio-code).
 
 <p align="center"> :pencil: :ledger: :clipboard: </p>
 
 ## Description
 
-<p align="center"> This participant-tracking application...</p>
+<p align="center"> This participant-tracking application was developed purely to exercise Azure software engineering.  That being said, an Express server locally hosts the application on port 8080 with a React server-side view, with the MongoDB native API in the back-end.</p>
 
-<p align="center"> Users are able to...</p>
+<p align="center"> While this application solely focused on functionality (so no CSS was applied), users are able to enjoy the cloud-deployed </p>
 
 <p align="center"> Regarding UX, users enjoy...</p>
 
 ## Preview
 
-![Azure Database Participants - GIF]()
+![Azure Database Participants - GIF](https://user-images.githubusercontent.com/25372739/134195803-ed427cb6-35dd-4748-985a-496811779639.gif)
 
 [Live Preview]()
 
@@ -33,16 +33,18 @@ This is a full-stack application using [Microsoft Docs](https://docs.microsoft.c
 ## Download and Installation
 
 - Clone the repo: `git clone https://github.com/droman892/azure-database-participants.git` 
+- Run `npm install` and `npm start` to see the application on your local device
 ## Usage
 
-.....
+After the project files are downloaded, feel free to edit the `index.jsx` file included with the src/views/ directory to edit the application as you see fit.
 
 ## Roadmap
 
-This participant-tracking application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application include the following:
+This participant-tracking application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application (aside from adding CSS) include the following:
 1) create a separate page to track participants by date
 2) include media queries for added responsiveness
 3) add a dropdown menu for additional functionality
+4) adding user authentication so only specific individuals may modify the application
 
 ## Bugs and Issues
 
